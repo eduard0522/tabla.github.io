@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --azul: #3366CC;
+    --azul_opa: #3366cc7c;
+    --azul_oscuro: #202F68;
+    --dorado: #DFA878;
+    --second-color:#ffffff;
+
+}
+
+* {
+    font-family: 'Baloo 2', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+body{
+    background-color:var(--second-color);
+    padding: 2rem;
+}
+.container-main{
+    background-color: var(--azul);
+    display: flex;
+    justify-content: space-between;
+    width: 91vw;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+/***********************   Header **************************/
+
+header{
+    width: 15%;
+  
+}
+.panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding:.2rem;
+    color: var(--second-color);
+    height: 100%;
+   
+}
+.panel span{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.panel .navegacion .botones-panel{
+    margin-top: 40px;
+}
+.panel .navegacion a,li{
+    font-weight: 600;
+    font-size: 18px;
+    list-style: none;
+    color: var(--second-color);
+    text-decoration: none;
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.panel .navegacion li:hover{
+    background-color: var(--azul_oscuro);
+    border-radius: 5px;
+}
+.panel img{
+    width: 160px;
+    
+}
+
+main{
+    width: 85%;
+    background-color: var(--second-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    
+}
+.information-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.date-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--azul);
+    font-weight: bold;
+}
+
+.rol-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+.rol-container img{
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+}
+
+.links-container  a{
+    font-weight: bold;
+    text-decoration: none;
+    font-style: none;
+    padding: .2rem;
+    color:#000;
+}
+.table-container{
+    margin-top: 3rem;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 5px  #6470e4;
+    border-radius: 1rem;
+   
+}
+
+.BD{
+    width: inherit;
+    height: auto;
+}
+.BD .register{
+    display:flex;
+    justify-content: space-between;
+    padding: .5rem;
+}
+.BD  input{
+    display: inline-block;
+    width: 70%;
+
+    padding: .5rem;
+    border: solid 1px #d8d5d5;
+    border-radius: .2rem;
+    font-size: .8rem;
+    font-weight: bold;
+    color: var(--azul);
+}
+.BD  input:focus{
+    border: 1px solid red;
+}
+
+.register button{
+ background-color:var(--second-color);
+ border: 1px solid var(--azul) ;
+ border-radius: .2rem;
+ color: var(--azul);
+ padding: .1rem 2rem;
+ font-size: 1rem;
+ font-weight: bold;
+ margin-right: .5rem;
+
+}
+
+
+/* Table */
+
+.table{
+    display: table;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: .5rem 1rem;
+    border-spacing: 0;
+    border-radius: .5rem;
+}
+table{
+    border-radius: .5rem;
+}
+.table thead{
+    background-color:var(--azul);
+    color:var(--second-color) ;
+    padding: .5rem .2rem;
+}
+.table thead th{
+    padding: .8rem 0.1rem;
+    text-align:left;
+    font-weight: bold;
+    text-align: center;
+}
+table thead th:first-child{
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    padding-left: .2rem;
+}
+.table thead th:last-child{
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.table tbody{
+    padding: .3rem 0;
+}
+
+.table tbody td{
+    padding: .3rem 0.1rem;
+    color: #000;
+    font-weight: bold;
+    background-color: #ffffff60;
+    text-align: center;
+}
+.icon-table img{
+    width: 30px;
+    height: 25px;
+    margin-right: .2rem;
+    padding: 0;
+   
+}
+
+
+.options-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.options-container span{
+    width: 25px;
+    height: 25px;
+}
+
+
+
+/****************** FOOTER  **************************/
+
+footer{
+    background-color: var(--azul);
+    border-radius: 1rem;
+    color: var(--second-color);
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    margin-top: 2rem;
+}
+footer .logo{
+    width: 50%;
+    display: flex;
+}
+.logo .informacion{
+    margin: 0 15px;
+}
+.logo .informacion span{
+    font-size: 12px;
+}
+footer .logo img{
+    width: 80px;
+    height: 80px;
+}
+footer .cajas{
+    display: flex;
+    width: 50%;
+    margin: 10px;
+}
+footer .info span {
+    color: var(--second-color);
+    font-size: 12px;
+
+}
+footer .info span a {
+    text-decoration: underline;
+    font-style: none;
+    color:var(--second-color);
+}
+
+
+/****************************   Responsive  ************************/
+
+@media screen and (max-width:800px){
+    body{
+        padding: 1.2rem;
+        margin: auto;
+    }
+    .container-main{
+        flex-direction: column;
+        width: 95vw;
+        margin: auto;
+        padding: .5rem;
+        border-radius: .5rem;
+    }
+    /***********************   Header **************************/
+    
+    header{
+        width: 100%;
+      
+    }
+    .panel{
+        border-radius: .5rem;
+        height: auto;
+    }
+    .panel span{
+        font-size: 1.2rem;
+    }
+    
+    .panel .navegacion .botones-panel{
+        display: flex;
+    }
+    .panel .navegacion a,li{
+        font-size: 1rem;
+        margin: 0;
+        width: 100%;
+        padding: .3rem 0.1rem ;
+    }
+    
+    main{
+        width: 100%;
+        margin: auto;
+        border-radius: 1rem;
+        padding: .5rem;
+        
+    }
+    .information-container{
+        width: 100%;
+    }
+
+    .table-container{
+        border-radius: .7rem;
+        overflow-x:auto;
+    }
+    .options-container span{
+        padding: .2rem;
+    }
+    
+    
+    /* Table */
+    
+    .table{
+        padding: .3rem .5rem;
+        font-size: .9rem;
+       
+    }
+    .table thead th{
+        padding: .2rem 0.2rem;
+    }
+    
+    .table tbody td{
+        padding: .2rem 0.5rem;
+    }
+   
+    /****************** FOOTER  **************************/
+    
+    footer{
+        padding: 20px;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo .informacion{
+        margin: 0 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer .logo {
+        width: 100%;
+    }
+
+    footer .logo img{
+        width: 80px;
+        height: 80px;
+    }
+    footer .cajas{
+        width: 100%;
+        margin: 0px;
+        padding: .5rem;
+    }
+    .hidden {
+      display: none;
+      visibility: hidden;
+    
+    }
+  
+}

@@ -1,0 +1,247 @@
+:root {
+    --azul: #3366CC;
+    --azul_opa: #3366cc7c;
+    --azul_oscuro: #202F68;
+    --dorado: #DFA878;
+    --second-color:#ffffff;
+}
+
+* {
+    font-family: 'Baloo 2', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    max-width: 1800px;
+    margin: auto;
+}
+
+
+
+section {
+    margin: 30px;
+}
+.table-container{
+    background-color: #fcfcfc;
+    box-shadow: 3px 3px 5px  #6470e4;
+}
+
+.header {
+    background-color: var(--azul);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding: 10px 40px;
+    border-radius: 12px 12px 0 0;
+}
+
+.header img {
+    padding: 5px;
+}
+
+.header #logo-vida {
+    width: 220px;
+    height: 80px;
+}
+
+.header #logo-aero {
+    width: 80px;
+    height: 80px;
+}
+
+.header .fecha {
+    color:var(--second-color);
+    text-align: right;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+h2{
+    color: var(--dorado);
+    text-align: center;
+    margin-top: 5rem;
+    font-weight: bold;
+}
+main h3{
+    color: var(--azul);
+    font-weight: bold;
+}
+
+
+.BD{
+    width: inherit;
+    height: auto;
+}
+.BD .register{
+    display:flex;
+    justify-content: space-between;
+}
+.BD  input{
+    margin-top: .5rem;
+    padding: .3rem;
+    border: solid 1px #c2c2c2;
+    border-radius: .2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--azul);
+}
+.register button{
+ background-color:var(--second-color);
+ border: 1px solid var(--dorado) ;
+ border-radius: .2rem;
+ color: var(--dorado);
+ padding: .5rem 2rem;
+ font-size: 1rem;
+ font-weight: bold;
+
+}
+
+
+
+/* Table */
+
+.table{
+    display: table;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: .5rem 2rem;
+}
+.table thead{
+    background-color: var(--azul);
+    color:var(--second-color) ;
+    font-weight: bold;
+}
+.table thead th{
+    padding: .3rem;
+    border-radius: .2rem;
+}
+.table tbody{
+    padding: .2rem;
+}
+
+.table tbody td{
+    padding: .2rem .3rem;
+    color: #000;
+    font-weight: bold;
+    background-color: #68baf160;
+}
+.icon-table img{
+    width: 20px;
+    height: 20px;
+    margin-right: .2rem;
+   
+}
+
+.container-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.options-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.options-container span{
+    width: 25px;
+    height: 25px;
+}
+
+
+/* FOOTER */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: var(--azul);
+    color: aliceblue;
+    padding: 10px 40px;
+    border-radius: 0 0 12px 12px;
+    max-width: 1800px;
+    margin: auto;
+    width: 100%;
+}
+
+
+.header-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo h2{
+    margin-left: 15px;
+    color: var(--second-color);
+}
+.redes i{
+    font-size: 30px;
+    margin: 8px;
+    color: aliceblue
+}
+.redes i:hover{
+    cursor: pointer;
+}
+.info{
+    display: flex;
+    justify-content: space-around;
+}
+.info .titulo{
+    font-size: 20px;
+}
+.info .titulo li{
+    font-size: 16px;
+}
+.info .titulo li a{
+    color: aliceblue;
+}
+
+
+
+/****************************** MEDIA QUERYS ******************************/
+
+
+@media (max-width:700px){
+    .header {
+        padding: .5rem;
+        border-radius: 6px 6px 0 0;
+    }
+    .header #logo-vida {
+        width: 180px;
+        height: 60px;
+    }
+    
+    .header #logo-aero {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .header .fecha {
+      font-size: 1rem;
+        
+    }
+    
+    h2{
+        margin-top: 2rem;
+    }
+    .table-container{
+        overflow-x: scroll;
+    }
+    .table{
+        padding: .2rem .5rem;
+    }
+    .table thead th{
+        font-size: .8rem;
+    }
+    .table tbody td{
+        font-size: .8rem;
+    }
+
+}
